@@ -50,7 +50,7 @@
                             <div class="col-6">{!! FormField::text('start_time', ['required' => true, 'label' => __('lecturing.start_time'), 'placeholder' => '19:00']) !!}</div>
                             <div class="col-6">{!! FormField::text('end_time', ['label' => __('lecturing.end_time'), 'placeholder' => '19:40']) !!}</div>
                             <div class="col-12">{!! FormField::text('time_text', ['label' => __('lecturing.time_text'), 'placeholder' => __('lecturing.time_text_placeholder')]) !!}</div>
-                            <div class="col-12">{!! FormField::text('lecturer_name', ['required' => true, 'label' => __('lecturing.lecturer_name')]) !!}</div>
+                            <div class="col-12">{!! FormField::text('lecturer_name', ['label' => __('lecturing.lecturer_name')]) !!}</div>
                         </div>
                     </div>
                 </div>
@@ -58,11 +58,11 @@
                     <div class="col-md-6">{!! FormField::text('imam_name', ['label' => __('lecturing.imam_name')]) !!}</div>
                     <div class="col-md-6">{!! FormField::text('muadzin_name', ['label' => __('lecturing.muadzin_name')]) !!}</div>
                 </div>
-                {!! FormField::text('book_title', ['label' => __('lecturing.book_title')]) !!}
-                {!! FormField::text('book_writer', ['label' => __('lecturing.book_writer')]) !!}
+                {!! FormField::text('place', ['label' => __('lecturing.place')]) !!}
+                <!-- {!! FormField::text('book_writer', ['label' => __('lecturing.book_writer')]) !!}
                 {!! FormField::text('book_link', ['label' => __('lecturing.book_link')]) !!}
                 {!! FormField::text('video_link', ['label' => __('lecturing.video_link')]) !!}
-                {!! FormField::text('audio_link', ['label' => __('lecturing.audio_link')]) !!}
+                {!! FormField::text('audio_link', ['label' => __('lecturing.audio_link')]) !!} -->
                 {!! FormField::text('title', ['label' => __('lecturing.title')]) !!}
                 {!! FormField::textarea('description', ['label' => __('lecturing.description')]) !!}
             </div>

@@ -31,8 +31,8 @@ class CreateFridayRequest extends FormRequest
             'imam_name' => ['required', 'max:60'],
             'muadzin_name' => ['required', 'max:60'],
             'title' => ['nullable', 'max:60'],
-            'video_link' => ['nullable', 'max:255'],
-            'audio_link' => ['nullable', 'max:255'],
+            // 'video_link' => ['nullable', 'max:255'],
+            // 'audio_link' => ['nullable', 'max:255'],
             'description' => ['nullable', 'max:255'],
         ];
     }

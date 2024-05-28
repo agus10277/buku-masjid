@@ -22,11 +22,11 @@ return new class extends Migration
                 $table->string('imam_name', 60)->nullable();
                 $table->string('muadzin_name', 60)->nullable();
                 $table->string('title', 60)->nullable();
-                $table->string('book_title', 60)->nullable();
-                $table->string('book_writer', 60)->nullable();
-                $table->string('book_link')->nullable();
-                $table->string('video_link')->nullable();
-                $table->string('audio_link')->nullable();
+                $table->string('place', 60)->nullable();
+                // $table->string('book_writer', 60)->nullable();
+                // $table->string('book_link')->nullable();
+                // $table->string('video_link')->nullable();
+                // $table->string('audio_link')->nullable();
                 $table->string('description')->nullable();
                 $table->boolean('is_off')->default(0);
                 $table->unsignedInteger('creator_id');

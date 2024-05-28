@@ -55,6 +55,9 @@ class LecturingTest extends TestCase
         $lecturing->audience_code = Lecturing::AUDIENCE_MUSLIMAH;
         $this->assertEquals(__('lecturing.audience_muslimah'), $lecturing->audience);
 
+        $lecturing->audience_code = Lecturing::AUDIENCE_MUSLIM;
+        $this->assertEquals(__('lecturing.audience_muslim'), $lecturing->audience);
+
         $lecturing->audience_code = Lecturing::AUDIENCE_FRIDAY;
         $this->assertEquals(__('lecturing.audience_friday'), $lecturing->audience);
     }

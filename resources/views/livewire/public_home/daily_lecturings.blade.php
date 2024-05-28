@@ -26,10 +26,16 @@
                         {{ $lecturing->time_text ? '('.$lecturing->time_text.')'  : '' }}
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>{!! config('lecturing.emoji.lecturer') !!} {{ $lecturerName[$lecturing->audience_code] }}</td>
                     <td>{{ $lecturing->lecturer_name }}</td>
-                </tr>
+                </tr> -->
+                @if ($lecturing->lecturer_name)
+                    <tr>
+                        <td>{!! config('lecturing.emoji.lecturer') !!} {{ __('lecturing.lecturer_name') }}</td>
+                        <td>{{ $lecturing->lecturer_name }} </td>
+                    </tr>
+                @endif
                 @if ($lecturing->imam_name)
                     <tr>
                         <td>{!! config('lecturing.emoji.imam') !!} {{ __('lecturing.imam_name') }}</td>
@@ -40,6 +46,18 @@
                     <tr>
                         <td>{!! config('lecturing.emoji.muadzin') !!} {{ __('lecturing.muadzin_name') }}</td>
                         <td>{{ $lecturing->muadzin_name }} </td>
+                    </tr>
+                @endif
+                @if ($lecturing->title)
+                    <tr>
+                        <td>{!! config('lecturing.emoji.title') !!} {{ __('lecturing.title') }}</td>
+                        <td>{{ $lecturing->title }} </td>
+                    </tr>
+                @endif
+                @if ($lecturing->place)
+                    <tr>
+                        <td>{!! config('lecturing.emoji.book') !!} {{ __('lecturing.place') }}</td>
+                        <td>{{ $lecturing->place }} </td>
                     </tr>
                 @endif
             </tbody>

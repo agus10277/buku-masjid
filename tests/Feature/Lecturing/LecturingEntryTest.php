@@ -22,11 +22,11 @@ class LecturingEntryTest extends TestCase
             'imam_name' => 'Ustadz Hafidz',
             'muadzin_name' => 'Ahmad',
             'title' => 'Lecturing title',
-            'book_title' => 'Book title',
-            'book_writer' => 'Book writer',
-            'book_link' => 'https://drive.google.com',
-            'video_link' => 'https://youtube.com',
-            'audio_link' => 'https://audio.com',
+            'place' => 'Book title',
+            // 'book_writer' => 'Book writer',
+            // 'book_link' => 'https://drive.google.com',
+            // 'video_link' => 'https://youtube.com',
+            // 'audio_link' => 'https://audio.com',
             'description' => 'Lecturing description',
         ], $overrides);
     }
@@ -126,9 +126,9 @@ class LecturingEntryTest extends TestCase
             'lecturer_name' => 'Ustadz Haikal',
             'title' => 'Lecturing title',
             'imam_name' => 'Ustadz Hamzah',
-            'muadzin_name' => 'Ustadz Bilal',
-            'video_link' => 'https://youtube.com',
-            'audio_link' => 'https://audio.com',
+            'muadzin_name' => 'Ustadz muadzin',
+            // 'video_link' => 'https://youtube.com',
+            // 'audio_link' => 'https://audio.com',
             'description' => 'Test description',
         ], $overrides);
     }

@@ -41,7 +41,7 @@
 
 @if (request('action') == 'edit' && $editableCategory)
 @can('update', $editableCategory)
-    <div id="categoryModal" class="modal" role="dialog">
+    <div id="categoryModal" class="modal" ="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">

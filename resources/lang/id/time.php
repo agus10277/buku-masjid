@@ -6,8 +6,8 @@ return [
     'tomorrow' => 'Besok',
     'date' => 'Tanggal',
     'week' => 'Minggu',
-    'this_week' => 'Pekan Ini',
-    'next_week' => 'Pekan Depan',
+    'this_week' => 'Minggu Ini',
+    'next_week' => 'Minggu Depan',
     'month' => 'Bulan',
     'time' => 'Waktu',
 

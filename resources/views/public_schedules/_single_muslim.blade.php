@@ -7,12 +7,9 @@
             </tr>
             <tr><td>{!! config('lecturing.emoji.date') !!} {{ __('time.date') }}</td><td>{{ $lecturing->full_date }}</td></tr>
             <tr><td>{!! config('lecturing.emoji.time') !!} {{ __('lecturing.time') }}</td><td>{{ $lecturing->time }}</td></tr>
-            <!-- <tr><td>{!! config('lecturing.emoji.lecturer') !!} {{ __('lecturing.lecturer_name') }}</td><td>{{ $lecturing->lecturer_name }}</td></tr> -->
+            <tr><td>{!! config('lecturing.emoji.lecturer') !!} {{ __('lecturing.lecturer_name') }}</td><td>{{ $lecturing->lecturer_name }}</td></tr>
             @if ($lecturing->place)
                 <tr><td>&#128216; {{ __('lecturing.book') }}</td><td>{{ $lecturing->place }}</td></tr>
-            @endif
-            @if ($lecturing->lecturer_name)
-                <tr><td>&#128216; {{ __('lecturing.emoji.lecturer') }}</td><td>{{ $lecturing->lecturer_name }}</td></tr>
             @endif
             <!-- @if ($lecturing->book_writer)
                 <tr><td>&#9997;&#65039; {{ __('lecturing.written_by') }}</td><td>{{ $lecturing->book_writer }}</td></tr>

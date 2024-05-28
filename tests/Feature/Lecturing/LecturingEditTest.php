@@ -21,11 +21,11 @@ class LecturingEditTest extends TestCase
             'imam_name' => 'Ustadz Hafidz',
             'muadzin_name' => 'Ahmad',
             'title' => 'Lecturing title',
-            'book_title' => 'Book title',
-            'book_writer' => 'Book writer',
-            'book_link' => 'https://drive.google.com',
-            'video_link' => 'https://youtube.com',
-            'audio_link' => 'https://audio.com',
+            'place' => 'Book title',
+            // 'book_writer' => 'Book writer',
+            // 'book_link' => 'https://drive.google.com',
+            // 'video_link' => 'https://youtube.com',
+            // 'audio_link' => 'https://audio.com',
             'description' => 'Lecturing description',
         ], $overrides);
     }
@@ -159,8 +159,8 @@ class LecturingEditTest extends TestCase
             'title' => 'Lecturing Title 2',
             'imam_name' => 'Ustadz Khalid',
             'muadzin_name' => 'Nanang',
-            'video_link' => 'https://youtube.com/ceramah',
-            'audio_link' => 'https://audio.com/ceramah',
+            // 'video_link' => 'https://youtube.com/ceramah',
+            // 'audio_link' => 'https://audio.com/ceramah',
             'description' => 'Test description 123',
         ], $overrides);
     }

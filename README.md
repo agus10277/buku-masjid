@@ -140,7 +140,7 @@ Lengkapnya dapat dilihat pada: [Dokumentasi buku-masjid/demo-data](https://githu
 
 ![Laporan Per](public/screenshots/02-categorized-report-for-public.jpg)
 
-#### Laporan Per Pekan
+#### Laporan Per Minggu
 
 ![Laporan Per](public/screenshots/03-weekly-report-for-public.jpg)
 

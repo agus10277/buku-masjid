@@ -13,6 +13,7 @@ class PublicScheduleController extends Controller
         $lecturingQuery = Lecturing::query();
         $lecturingQuery->where('date', Carbon::today()->format('Y-m-d'));
         $lecturingQuery->orderBy('date')->orderBy('start_time');
+        $lecturingQuery->orderBy('date')->orderBy('start_time');
         $lecturings = $lecturingQuery->get()->groupBy('audience_code');
         $audienceCodes = $this->getAudienceCodeList();
 
