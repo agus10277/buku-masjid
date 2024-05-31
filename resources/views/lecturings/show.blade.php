@@ -18,7 +18,6 @@
                     </tr>
                     <tr><td>{!! config('lecturing.emoji.date') !!} {{ __('time.date') }}</td><td>{{ $lecturing->full_date }}</td></tr>
                     <tr><td>{!! config('lecturing.emoji.time') !!} {{ __('lecturing.time') }}</td><td>{{ $lecturing->time }}</td></tr>
-                    <!-- <tr><td>{!! config('lecturing.emoji.lecturer') !!} {{ __('lecturing.lecturer_name') }}</td><td>{{ $lecturing->lecturer_name }}</td></tr> -->
                     @if ($lecturing->lecturer_name)
                         <tr><td>{!! config('lecturing.emoji.lecturer') !!} {{ __('lecturing.lecturer_name') }}</td><td>{{ $lecturing->lecturer_name }}</td></tr>
                     @endif
@@ -31,12 +30,12 @@
                     @if ($lecturing->place)
                         <tr><td>{!! config('lecturing.emoji.book') !!} {{ __('lecturing.book') }}</td><td>{{ $lecturing->place }}</td></tr>
                     @endif
-                    <!-- <tr><td>{!! config('lecturing.emoji.written_by') !!} {{ __('lecturing.written_by') }}</td><td>{{ $lecturing->book_writer }}</td></tr>
-                    <tr><td>{!! config('lecturing.emoji.book_link') !!} {{ __('lecturing.book_link') }}</td><td>{{ $lecturing->book_link }}</td></tr>
-                    <tr><td>{!! config('lecturing.emoji.video_link') !!} {{ __('lecturing.video_link') }}</td><td>{{ $lecturing->video_link }}</td></tr>
-                    <tr><td>{!! config('lecturing.emoji.audio_link') !!} {{ __('lecturing.audio_link') }}</td><td>{{ $lecturing->audio_link }}</td></tr> -->
-                    <tr><td>{!! config('lecturing.emoji.title') !!} {{ __('lecturing.title') }}</td><td>{{ $lecturing->title }}</td></tr>
-                    <tr><td>{!! config('lecturing.emoji.description') !!} {{ __('lecturing.description') }}</td><td>{{ $lecturing->description }}</td></tr>
+                    @if ($lecturing->description)
+                        <tr><td>{!! config('lecturing.emoji.description') !!} {{ __('lecturing.description') }}</td><td>{{ $lecturing->description }}</td></tr>
+                    @endif
+                    @if ($lecturing->title)
+                        <tr><td>{!! config('lecturing.emoji.title') !!} {{ __('lecturing.title') }}</td><td>{{ $lecturing->title }}</td></tr>
+                    @endif
                 </tbody>
             </table>
             <div class="card-footer">

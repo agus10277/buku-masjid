@@ -17,6 +17,9 @@ class PublicScheduleController extends Controller
         $lecturingQuery->whereBetween('date', [$startDate, $endDate]);
         $lecturingQuery->orderBy('date')->orderBy('start_time');
         $lecturings = $lecturingQuery->get()->groupBy('audience_code');
+        $placeQuery->where('date', 'like', $yearMonth . '%');
+        $placeQuery->orderBy('date')->orderBy('start_time');
+        $places = $placeQuery->get()->groupBy('audience_code');
 
         return response()->json($lecturings);
     }

@@ -23,15 +23,11 @@
                             <div class="col-6">{!! FormField::text('start_time', ['required' => true, 'label' => __('lecturing.start_time'), 'placeholder' => '12:15']) !!}</div>
                         </div>
                         {!! FormField::text('lecturer_name', ['required' => true, 'label' => __('lecturing.friday_lecturer_name')]) !!}
-                        <!-- {!! FormField::text('title', ['label' => __('lecturing.title')]) !!} -->
+                        <div class="row">
+                            <div class="col-12">{!! FormField::text('muadzin_name', ['required' => true, 'label' => __('lecturing.muadzin_name'),]) !!}</div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">{!! FormField::text('imam_name', ['label' => __('lecturing.imam_name')]) !!}</div>
-                    <div class="col-md-6">{!! FormField::text('muadzin_name', ['required' => true, 'label' => __('lecturing.muadzin_name')]) !!}</div>
-                    <!-- <div class="col-md-6">{!! FormField::text('video_link', ['label' => __('lecturing.video_link')]) !!}</div>
-                    <div class="col-md-6">{!! FormField::text('audio_link', ['label' => __('lecturing.audio_link')]) !!}</div> -->
-                </div>
+                </div> 
                 {!! FormField::textarea('description', ['label' => __('lecturing.description')]) !!}
             </div>
             <div class="card-footer">

@@ -26,10 +26,6 @@
                         {{ $lecturing->time_text ? '('.$lecturing->time_text.')'  : '' }}
                     </td>
                 </tr>
-                <!-- <tr>
-                    <td>{!! config('lecturing.emoji.lecturer') !!} {{ $lecturerName[$lecturing->audience_code] }}</td>
-                    <td>{{ $lecturing->lecturer_name }}</td>
-                </tr> -->
                 @if ($lecturing->lecturer_name)
                     <tr>
                         <td>{!! config('lecturing.emoji.lecturer') !!} {{ __('lecturing.lecturer_name') }}</td>
@@ -58,6 +54,12 @@
                     <tr>
                         <td>{!! config('lecturing.emoji.book') !!} {{ __('lecturing.place') }}</td>
                         <td>{{ $lecturing->place }} </td>
+                    </tr>
+                @endif
+                @if ($lecturing->description)
+                    <tr>
+                        <td>{!! config('lecturing.emoji.description') !!} {{ __('lecturing.description') }}</td>
+                        <td>{{ $lecturing->description }} </td>
                     </tr>
                 @endif
             </tbody>

@@ -7,7 +7,7 @@ return [
     'public_schedule' => 'Jadwal Kegiatan',
     'list' => 'Daftar Jadwal Pengajian',
     'search' => 'Cari Jadwal Pengajian',
-    'search_text' => 'Penceramah ...',
+    'search_text' => 'Tempat...',
     'all' => 'Semua Jadwal Pengajian',
     'select' => 'Pilih Jadwal Pengajian',
     'detail' => 'Detail Jadwal Pengajian',
@@ -63,7 +63,7 @@ return [
     // 'video_link' => 'Link Video',
     // 'audio_link' => 'Link Audio',
     'title' => 'Acara',
-    'description' => 'Keterangan',
+    'description' => 'Notes',
     'imam_name' => 'Imam',
-    'muadzin_name' => 'Muadzin/Bilal',
+    'muadzin_name' => 'Bilal',
 ];

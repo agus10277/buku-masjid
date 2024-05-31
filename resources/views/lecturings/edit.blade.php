@@ -59,10 +59,6 @@
                     <div class="col-md-6">{!! FormField::text('muadzin_name', ['label' => __('lecturing.muadzin_name')]) !!}</div>
                 </div>
                 {!! FormField::text('place', ['label' => __('lecturing.place')]) !!}
-                <!-- {!! FormField::text('book_writer', ['label' => __('lecturing.book_writer')]) !!}
-                {!! FormField::text('book_link', ['label' => __('lecturing.book_link')]) !!}
-                {!! FormField::text('video_link', ['label' => __('lecturing.video_link')]) !!}
-                {!! FormField::text('audio_link', ['label' => __('lecturing.audio_link')]) !!} -->
                 {!! FormField::text('title', ['label' => __('lecturing.title')]) !!}
                 {!! FormField::textarea('description', ['label' => __('lecturing.description')]) !!}
             </div>
