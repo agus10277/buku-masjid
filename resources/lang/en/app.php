@@ -7,7 +7,7 @@ return [
     'yes' => 'Yes',
     'label' => 'Label',
     'action' => 'Action',
-    'welcome' => 'Assalamu\'alaikum',
+    'welcome' => 'Assalamu\'alaikum Wr. Wb',
     'active' => 'Active',
     'inactive' => 'Inactive',
     'show_detail_title' => 'View :name :type detail',
